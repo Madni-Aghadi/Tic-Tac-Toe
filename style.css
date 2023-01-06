@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Fjalla+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+.dbox:hover{
+    background: rgb(34,30,30);
+background: linear-gradient(90deg, rgba(34,30,30,1) 30%, rgba(0,250,255,0.6811099439775911) 81%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto'; */
+    color:white;
+}
+
+body{
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #0023ff 50%, #ffffff 100%);
+  
+
+}
+/* Navbar */
+
+#sun{
+    background-color: #0023ff;
+    border:none;
+    /* padding-top: 10px; */
+    margin-top:19px;
+    font-size: 25px;
+}
+.nav {
+    padding: 20px 7px;
+
+    /* background-color: black; */
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(70, 119, 188) 0%, rgb(35, 119, 221) 90% );
+    text-align: center;
+    color: #ffff;
+    
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+
+.gamecontainer {
+    margin-top: 40px;
+    /* background-color: aquamarine; */
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 15vh);
+    /* position: relative; */
+
+
+}
+
+
+.box {
+    cursor: pointer;
+    border: 2px solid rgb(0, 119, 123);
+    font-size: 3vw;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.box:hover {
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00dadecd 0%, #0022ffbb 50%, #8d1a1a00 100%);
+}    
+
+.imgbox img {
+    width: 0px;
+    transition: all 1s ease-in-out;
+}
+
+.info {
+    font-size: 21px;
+}
+
+/* Utilities Classes */
+
+
+.bl-0 {
+    border-left: 0;
+}
+
+
+.bt-0 {
+    border-top: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+
+/* Game Info */
+.gameinfo {
+    margin-left: 30px;
+
+}
+
+.gameinfo h1{
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Tapestry', cursive; */
+    letter-spacing: 0.2px;
+
+}
+
+/* button */
+#reset {
+    cursor: pointer;
+    margin: 10px 0 0 110px;
+    padding: 6px;
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(70, 119, 188) 0%, rgb(35, 119, 221) 90% );
+    color: white;
+    border-radius: 19px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:800px) {
+    .gamecontainer {
+        /* display: block; */
+        flex-wrap: wrap;
+    }
+
+    .gameinfo {
+        margin-top: 10px;
+    }
+
+    .heading {
+        font-size: 1.3rem;
+        /* font-family: 'Press Start 2P', cursive !important; */
+
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(3, 20vh);
+        justify-content: center;
+
+    }
+}
+
+.line {
+    background-image: radial-gradient( circle farthest-corner at 92.3% 71.5%,  rgb(11, 53, 113) 0%, rgb(2, 54, 117) 90% );
+    /* background-color: black; */
+    width: 0vw;
+    height: 3px;
+    position: absolute;
+    /* transform: rotate(90deg) translate(15vw,-14vw); */
+}
+
+
+
+
+
+
+.dark-mode{
+
+    background: rgb(34,30,30);
+background: linear-gradient(90deg, rgba(34,30,30,1) 30%, rgba(0,250,255,0.6811099439775911) 81%);
+}
+
+.dark-nav{
+    
+    background: rgb(34,30,30);
+background: linear-gradient(90deg, rgba(34,30,30,1) 30%, rgba(0, 98, 100, 0.681) 81%);
+    
+}
+
+
+.dark-h{
+    color:rgb(0, 51, 30);
+}
+

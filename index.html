@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game!!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <nav class="nav">
+        <ul>
+            <li>TIC-TAC-TOE GAME BY MADNI</li>
+        </ul>
+       <button id="sun" onclick="suntoggle()"> 
+        <i class="fa-solid fa-sun"></i>
+       </button>
+    </nav>
+
+    <div class="gamecontainer">
+        <div class="container">
+            <div class="line"></div>
+            <div class="box dbox bl-0 bb-0 bt-0"><span class="boxtext"></span></div>
+            <div class="box dbox bt-0  bl-0 br-0 bb-0"><span class="boxtext"></span></div>
+            <div class="box dbox bt-0 bb-0 br-0"><span class="boxtext"></span></div>
+            <div class="box dbox bl-0 "><span class="boxtext"></span></div>
+            <div class="box dbox bl-0 br-0"><span class="boxtext"></span></div>
+            <div class="box dbox br-0"><span class="boxtext"></span></div>
+            <div class="box dbox bt-0 bb-0 bl-0"><span class="boxtext"></span></div>
+            <div class="box dbox bb-0  bl-0 br-0 bt-0"><span class="boxtext"></span></div>
+            <div class="box dbox  bb-0 br-0 bt-0"><span class="boxtext"></span></div>
+        </div>
+        <div class="gameinfo">
+            <h1 class="heading">Welcome to Tic-Tac-Toe Game:)</h1>
+            <span class="info"></span>
+            <button id="reset">Reset</button>
+            <div class="imgbox">
+                <img src="excited.gif" alt="" width="60px">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="logic.js"></script>
+</body>
+
+</html>
